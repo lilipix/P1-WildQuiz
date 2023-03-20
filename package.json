@@ -1,0 +1,23 @@
+{
+  "name": "2023-02-js-ft-lyon-p1-wildquiz",
+  "version": "1.0.0",
+  "description": "Template for P1 WildCodeSchool Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WildCodeSchool/2023-02-JS-FT-Lyon-P1-WildQuiz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WildCodeSchool/2023-02-JS-FT-Lyon-P1-WildQuiz/issues"
+  },
+  "homepage": "https://github.com/WildCodeSchool/2023-02-JS-FT-Lyon-P1-WildQuiz#readme",
+  "devDependencies": {
+    "w3c-html-validator": "^1.3.3"
+  }
+}
