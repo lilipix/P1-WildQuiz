@@ -21,10 +21,10 @@ body {
 /* ------------------------------------------------ HEADER */
 
 header {
-	background: #694384;
-	display: grid;
-	grid-template-columns: 1fr auto 1fr;
-	padding-left: 15px;
+	background: #443267;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 15px;
 }
 
 nav {
