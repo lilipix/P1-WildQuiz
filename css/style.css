@@ -1,0 +1,64 @@
+/* ------------------------------------------------ GENERAL */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: #000;
+	display: grid;
+	grid-template-rows: 65px 1fr 65px;
+}
+
+/* ------------------------------------------------ HEADER */
+
+header {
+	background: #694384;
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+}
+
+header nav ul {
+	display: flex;
+	align-content: center;
+}
+
+.nav-icons {
+	height: 50px;
+	width: 75px;
+}
+
+#logo-link {
+	align-self: center;
+}
+
+#logo-image {
+	height: 50px;
+	width: 50px;
+	margin-top: 5px;
+	align-self: center;
+}
+
+/* ------------------------------------------------ MAIN */
+
+
+
+/* ------------------------------------------------ FOOTER */
+
+
+
+/* ------------------------------------------------ FLEXIBILITY */
+
