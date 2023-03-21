@@ -1,0 +1,59 @@
+/* ------------------------------------------------ GENERAL */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+html, body {
+	height: 100%;
+}
+
+/* ------------------------------------------------ HEADER */
+
+
+
+/* ------------------------------------------------ MAIN */
+
+.city-background {
+	background-image: url(../assets/background/lyon-background.svg);
+	background-position: center;
+	background-size: cover;
+	/*width: 100%;*/
+	height: 400px;
+}
+
+.WildQuiz-button-section {
+	background: #694384;
+	display: grid;
+	justify-items: center;
+	padding-bottom: 25px;
+}
+
+h2 {
+	text-align: center;
+	margin: 20px 0;
+	color: white;
+}
+
+.play {
+	background: #4CE384;
+	height: 80px;
+	width: 75%;
+	color: #694384;
+	border-radius: 20px;
+	font-size: 2em;
+	font-weight: bold;
+	/*border: none;*/
+	outline: none;
+}
+
+/* ------------------------------------------------ FOOTER */
+
+
+
+/* ------------------------------------------------ FLEXIBILITY */
+
