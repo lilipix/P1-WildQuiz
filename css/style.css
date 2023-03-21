@@ -24,6 +24,7 @@ header {
 	background: #694384;
 	display: grid;
 	grid-template-columns: 1fr auto 1fr;
+	padding-left: 15px;
 }
 
 nav {
@@ -36,9 +37,13 @@ header nav ul {
 	align-content: center;
 }
 
+header nav ul li {
+	margin-right: 25px;
+}
+
 .nav-icons {
-	height: 50px;
-	width: 75px;
+	height: 30px;
+	width: 30px;
 }
 
 #logo-link {
