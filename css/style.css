@@ -59,10 +59,13 @@ header nav ul li {
 }
 
 /* ------------------------------------------------ MAIN */
-main {
-    margin: auto;
+#framboise{
+    color: white;
 }
 
+#info {
+    margin: auto;
+}
 
 .city-background {
 	background-image: url(../assets/background/lyon-background.svg);
@@ -82,7 +85,6 @@ main {
 h2 {
 	text-align: center;
 	margin: 20px 0;
-	color: white;
 }
 
 
@@ -110,15 +112,15 @@ h2 {
 
 
 .play {
-	background: #4CE384;
-	height: 80px;
-	width: 75%;
-	color: #430269;
-	border-radius: 20px;
-	font-size: 2em;
-	font-weight: bold;
-	outline: none;
-	border: none;
+    background: #4CE384;
+    height: 80px;
+    width: 75%;
+    color: #430269;
+    border-radius: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    outline: none;
+    border: none;
 }
 
 
@@ -172,6 +174,23 @@ h2 {
         font-size: 1.3rem;
     }
 
+    .play {
+        background: #4CE384;
+        height: 150px;
+        width: 400px;
+        color: #430269;
+        border-radius: 20px;
+        font-size: 2em;
+        font-weight: bold;
+        outline: none;
+        border: none;
+    }
+
+    #framboise{
+        font-size: 3em;
+    }
+    
+
 }
 
 
@@ -182,17 +201,17 @@ h2 {
 /* ------------------------------------------------ FOOTER */
 
 footer {
-	padding: 0 15px;
-	background: #430269;
-	display: flex;
-	align-items: center;
-	position: sticky;
-	top: 100vh;
+    padding: 0 15px;
+    background: #430269;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 100vh;
 }
 
 footer a img {
-	height: 48px;
-	width: 48px;
+    height: 48px;
+    width: 48px;
 }
 
 
