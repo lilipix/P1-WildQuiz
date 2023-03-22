@@ -265,6 +265,7 @@ header nav ul li {
 }
 
 .WildQuiz-button-section {
+	margin-top: 40px;
 	background: #430269;
 	display: grid;
 	justify-items: center;
@@ -293,7 +294,7 @@ h2 {
 
 footer {
 	padding: 0 15px;
-	background: black;
+	background: #430269;
 	display: flex;
 	align-items: center;
 	position: sticky;
