@@ -103,7 +103,6 @@ main {
 }
 
 section {
-	background-color: green;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -190,6 +189,14 @@ section {
 	justify-content: center;
 
 
+}
+
+.green {
+	background-color: green;
+}
+
+.red {
+	background-color: red;
 }
 
 /* ------------------------------------------------ FOOTER */
