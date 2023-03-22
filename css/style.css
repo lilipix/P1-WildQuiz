@@ -13,7 +13,6 @@ html, body {
 }
 
 body {
-	background: #000;
 	display: grid;
 	grid-template-rows: 65px 1fr 65px;
 }
@@ -21,7 +20,7 @@ body {
 /* ------------------------------------------------ HEADER */
 
 header {
-	background: #443267;
+	background: #430269;
 	display: flex;
 	justify-content: space-between;
 	padding: 0 15px;
@@ -59,11 +58,53 @@ header nav ul li {
 
 /* ------------------------------------------------ MAIN */
 
+.city-background {
+	background-image: url(../assets/background/lyon-background.svg);
+	background-position: center;
+	background-size: cover;
+	height: 400px;
+}
 
+.WildQuiz-button-section {
+	background: #430269;
+	display: grid;
+	justify-items: center;
+	padding-bottom: 25px;
+}
+
+h2 {
+	text-align: center;
+	margin: 20px 0;
+	color: white;
+}
+
+.play {
+	background: #4CE384;
+	height: 80px;
+	width: 75%;
+	color: #430269;
+	border-radius: 20px;
+	font-size: 2em;
+	font-weight: bold;
+	outline: none;
+	border: none;
+}
 
 /* ------------------------------------------------ FOOTER */
 
+footer {
+	padding: 0 15px;
+	background: black;
+	display: flex;
+	align-items: center;
+	position: sticky;
+	top: 100vh;
+}
 
+footer a img {
+	height: 48px;
+	width: 48px;
+}
 
 /* ------------------------------------------------ FLEXIBILITY */
 
