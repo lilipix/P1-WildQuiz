@@ -5,7 +5,7 @@
 //carte leaflet
 // declarer position de la carte (Lyon)
 const map = L.map('map').setView([45.75046, 4.83948], 13);
-const modal1 = document.querySelector(".modal");
+const modal = document.querySelector("section");
 const button = document.querySelector("exitButton");
 const answers = document.querySelector("answers");
 const answerA = document.querySelector("answerA");
@@ -45,7 +45,6 @@ markers.forEach(marker => marker.addEventListener("click", handleClick))
 
 // fonction pour afficher le modal avec les questions
 function handleClick(event) {
-    //modal.style.display = "block";
     //if (event.latlng.lat === 45.76276 && event.latlng.lng === 4.84719) {
     let modalPopUp = document.createElement("div")
     modalPopUp.innerHTML =
@@ -64,6 +63,6 @@ function handleClick(event) {
     <script src="timer.js"></script>-->
     </div>`
 
-    modal1.appendChild(modalPopUp)
+    modal.appendChild(modalPopUp)
 }
 //}
