@@ -4,7 +4,7 @@
 
 //carte leaflet
 // declarer position de la carte (Lyon)
-const map = L.map('map').setView([45.75046, 4.83948], 13);
+const map = L.map('map').setView([45.76952, 4.83652], 13);
 const modal = document.querySelector("section");
 const button = document.querySelector("exitButton");
 const answers = document.querySelector("answers");
@@ -14,7 +14,7 @@ const answerC = document.querySelector("answerC");
 const answerD = document.querySelector("answerD");
 const answer = document.querySelectorAll["answer"];
 
-
+const instructions = document.querySelector("#instructions");
 
 // importer carte 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -45,6 +45,7 @@ markers.forEach(marker => marker.addEventListener("click", handleClick))
 
 // fonction pour afficher le modal avec les questions
 function handleClick(event) {
+    instructions.style.display = "none";
     //if (event.latlng.lat === 45.76276 && event.latlng.lng === 4.84719) {
     let modalPopUp = document.createElement("div")
     modalPopUp.innerHTML =
@@ -53,12 +54,20 @@ function handleClick(event) {
     <h2 class="modalQuestion">My question</h2>
     <p class="exitButton">Suivant</p>
     <div class="answers">
-        <label class="answer answerA">Answer1</label>
-        <label class="answer answerB">Answer2</label>
-        <label class="anwser answerC">Answer3</label>
-        <label class="anwser answerD">Answer4</label>
+    <label class="answer answerA">
+        <div class="choix">A</div>Answer1
+    </label>
+    <label class="answer answerB">
+        <div class="choix">B</div>Answer2
+    </label>
+    <label class="answer answerC">
+        <div class="choix">C</div>Answer3
+    </label>
+    <label class="answer answerD">
+        <div class="choix">D</div>Answer4
+    </label>
     </div>
-    <!--timer
+<!--timer
     <div id="timer"></div>
     <script src="timer.js"></script>-->
     </div>`
