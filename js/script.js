@@ -51,7 +51,7 @@ function handleClick(event) {
 
         `<div class="modal">
     <h2 class="modalQuestion">My question</h2>
-    <p class="exitButton">x</p>
+    <p class="exitButton">Suivant</p>
     <div class="answers">
         <label class="answer answerA">Answer1</label>
         <label class="answer answerB">Answer2</label>

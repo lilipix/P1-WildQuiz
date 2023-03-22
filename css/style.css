@@ -67,7 +67,9 @@ header nav ul li {
 }
 
 .modal {
-	background-color: red;
+	background-color: #7702BC;
+	color: white;
+	opacity: 96%;
 	width: 80vw;
 	height: 60vh;
 	position: absolute;
@@ -75,9 +77,38 @@ header nav ul li {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 1;
+	border-radius: 0.8em;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	padding: auto;
 
 }
 
+.modalQuestion {
+	margin: auto;
+	padding: auto;
+}
+
+.exitButton {
+	position: absolute;
+	top: 1rem;
+	left: 65%;
+	background-color: #0fe383;
+	color: #7702BC;
+	border-radius: 0.4em;
+	padding: 0.3rem;
+	fon
+}
+
+.answers {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	padding: auto;
+
+
+}
 
 /* ------------------------------------------------ FOOTER */
 
