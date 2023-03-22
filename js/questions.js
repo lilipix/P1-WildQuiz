@@ -24,7 +24,6 @@ export const questionsToQuiz = {
             answerC: "Les canelés",
             answerD: "Le Donut’s, Hou pinaise c’est bon!"
         },
-        
         rightAnswer: "answerA"
     },
 
@@ -36,7 +35,8 @@ export const questionsToQuiz = {
             answerB: "Jeanne d’Arc sur son cheval",
             answerC: "Cyrano de Bergerac sur son cheval",
             answerD: "Shrek sur son âne"
-        }
+        },
+        rightAnswer: "answerA"
     },
 
     questionPlaceArtise: {
@@ -47,7 +47,8 @@ export const questionsToQuiz = {
             answerB: "Les étriers",
             answerC: "La selle",
             answerD: "Le bouclier de Captain America"
-        }
+        },
+        rightAnswer: "answerA"
     },
 
     questionTheatreLyon: {
@@ -58,7 +59,8 @@ export const questionsToQuiz = {
             answerB: "Le théâtre de Guignol",
             answerC: "La comedia del arte",
             answerD: "Le théâtre de boulevard (il y a beaucoup de boulevards à Lyon, c’est pour ça)"
-        }
+        },
+        rightAnswer: "answerA"
     },
 
     questionTraboule: {
@@ -69,7 +71,8 @@ export const questionsToQuiz = {
             answerB: "On vous menace de prendre un poing dans la figure",
             answerC: "On vous propose de passer par une petite ruelle située entre deux rues parallèles",
             answerD: "C’est tellement obscène que je n’ose pas vous expliquer le sens de cette phrase…"
-        }
+        },
+        rightAnswer: "answerA"
     },
 
     questionQuartierHistorique: {
@@ -80,7 +83,8 @@ export const questionsToQuiz = {
             answerB: "Saint-Jean",
             answerC: "Saint-Félicien",
             answerD: "Saint-Tropez (charmant quartier typiquement lyonnais)"
-        }
+        },
+        rightAnswer: "answerA"
     },
 
     questionBougieFenetre: {
@@ -91,7 +95,8 @@ export const questionsToQuiz = {
             answerB: "La Fête de la Saint-Jean",
             answerC: "La Fête des Canuts",
             answerD: "La grève annuelle d’EDF"
-        }
+        },
+        rightAnswer: "answerA"
     },
 
     questionQuartierDeCharme: {
@@ -102,7 +107,8 @@ export const questionsToQuiz = {
             answerB: "La Croix-Rousse",
             answerC: "Fourvière",
             answerD: "Time Square"
-        }
+        },
+        rightAnswer: "answerA"
     },
 
     questionChefCuisinier: {
@@ -113,7 +119,8 @@ export const questionsToQuiz = {
             answerB: "Cyril Lignac",
             answerC: "Georges Blanc",
             answerD: "Casimir (et son célèbre gloubiboulga)"
-        }
+        },
+        rightAnswer: "answerA"
     },
 
     questionDiscretMusee: {
@@ -124,6 +131,7 @@ export const questionsToQuiz = {
             answerB: "Le musée des Marionettes",
             answerC: "Le musée de la Miniature et du Cinéma",
             answerD: "Le musée de la Tour Eiffel (ils manquaient de place à Paris alors…)"
-        }
+        }, 
+        rightAnswer: "answerA"
     }
 }
