@@ -1,7 +1,7 @@
 import { questionsToQuiz} from "./questions.js";
 
 // declarer position de la carte (Lyon)
-const map = L.map('map').setView([45.76952, 4.83652], 13);
+const map = L.map('map').setView([45.76952, 4.83652], 10);
 
 const modal = document.querySelector("section");
 const button = document.querySelector(".exitButton");
@@ -125,35 +125,33 @@ const pare10 = new Marker(
 )
 
 
+//* Creating markers and events of click in each marker
 
-
-let marker1 = L.marker([45.76276, 4.84719]).addTo(map);
-let marker2 = L.marker([45.75786, 4.83218]).addTo(map);
-let marker3 = L.marker([45.75751, 4.83355]).addTo(map);
-let marker4 = L.marker([45.76577, 4.82861]).addTo(map);
-let marker5 = L.marker([45.76284, 4.82779]).addTo(map);
-let marker6 = L.marker([45.76038, 4.82669]).addTo(map);
-let marker7 = L.marker([45.77835, 4.85344]).addTo(map);
-let marker8 = L.marker([45.77948, 4.82838]).addTo(map);
-let marker9 = L.marker([45.76353, 4.85087]).addTo(map);
-let marker10 = L.marker([45.76191, 4.82724]).addTo(map);
+let marker1 = L.marker([45.76276, 4.84719]).addTo(map).on('click', onMapClick1)
+let marker2 = L.marker([45.75786, 4.83218]).addTo(map).on('click', onMapClick2)
+let marker3 = L.marker([45.75751, 4.83355]).addTo(map).on('click', onMapClick3)
+let marker4 = L.marker([45.76577, 4.82861]).addTo(map).on('click', onMapClick4)
+let marker5 = L.marker([45.76284, 4.82779]).addTo(map).on('click', onMapClick5)
+let marker6 = L.marker([45.76038, 4.82669]).addTo(map).on('click', onMapClick6)
+let marker7 = L.marker([45.77835, 4.85344]).addTo(map).on('click', onMapClick7)
+let marker8 = L.marker([45.77948, 4.82838]).addTo(map).on('click', onMapClick8)
+let marker9 = L.marker([45.76353, 4.85087]).addTo(map).on('click', onMapClick9)
+let marker10 = L.marker([45.76191, 4.82724]).addTo(map).on('click', onMapClick10)
 
 // let markers = [marker1, marker2, marker3, marker4, marker5, marker6, marker7, marker8, marker9, marker10]
 
-// markers.forEach(marker => marker.addEventListener("click", something))
 
-// marker1.addEventListener('click', handleClick(marker1));
-// marker1.addEventListener('click', handleClick())
+
+//* Functions to display the modal 
 
 const popup = L.popup();
-marker1.on('click', onMapClick);
-
-function onMapClick(e) {
+function onMapClick1(e) {
+    instructions.style.display = "none";
     popup
         .setLatLng(e.latlng)
         .setContent(`<div class="modal">
         <h2 class="modalQuestion">${pare1.question}</h2>
-        <p class="exitButton">Suivant</p>
+        
         <div class="answers">
         <label class="answer answerA" onclick="trueOrFalse()">
             <div class="choix">A</div>${pare1.answerA}
@@ -174,6 +172,286 @@ function onMapClick(e) {
         </div>
     `)
         .openOn(map);
+
+}
+
+
+function onMapClick2(e) {
+    instructions.style.display = "none";
+    popup
+        .setLatLng(e.latlng)
+        .setContent(`<div class="modal">
+        <h2 class="modalQuestion">${pare2.question}</h2>
+        
+        <div class="answers">
+        <label class="answer answerA" onclick="trueOrFalse()">
+            <div class="choix">A</div>${pare2.answerA}
+        </label>
+        <label class="answer answerB" onclick="trueOrFalse()">
+            <div class="choix">B</div>${pare2.answerB}
+        </label>
+        <label class="answer answerC" onclick="trueOrFalse()">
+            <div class="choix">C</div>${pare2.answerC}
+        </label>
+        <label class="answer answerD" onclick="trueOrFalse()">
+            <div class="choix">D</div>${pare2.answerD}
+        </label>
+    </div>
+        <!--timer
+        <div id="timer"></div>
+        <script src="timer.js"></script>-->
+        </div>
+    `)
+        .openOn(map);
+
+}
+
+
+function onMapClick3(e) {
+    instructions.style.display = "none";
+    popup
+        .setLatLng(e.latlng)
+        .setContent(`<div class="modal">
+        <h2 class="modalQuestion">${pare2.question}</h2>
+        
+        <div class="answers">
+        <label class="answer answerA" onclick="trueOrFalse()">
+            <div class="choix">A</div>${pare2.answerA}
+        </label>
+        <label class="answer answerB" onclick="trueOrFalse()">
+            <div class="choix">B</div>${pare2.answerB}
+        </label>
+        <label class="answer answerC" onclick="trueOrFalse()">
+            <div class="choix">C</div>${pare2.answerC}
+        </label>
+        <label class="answer answerD" onclick="trueOrFalse()">
+            <div class="choix">D</div>${pare2.answerD}
+        </label>
+    </div>
+        <!--timer
+        <div id="timer"></div>
+        <script src="timer.js"></script>-->
+        </div>
+    `)
+        .openOn(map);
+
+}
+
+
+function onMapClick4(e) {
+    instructions.style.display = "none";
+    popup
+        .setLatLng(e.latlng)
+        .setContent(`<div class="modal">
+        <h2 class="modalQuestion">${pare2.question}</h2>
+        
+        <div class="answers">
+        <label class="answer answerA" onclick="trueOrFalse()">
+            <div class="choix">A</div>${pare2.answerA}
+        </label>
+        <label class="answer answerB" onclick="trueOrFalse()">
+            <div class="choix">B</div>${pare2.answerB}
+        </label>
+        <label class="answer answerC" onclick="trueOrFalse()">
+            <div class="choix">C</div>${pare2.answerC}
+        </label>
+        <label class="answer answerD" onclick="trueOrFalse()">
+            <div class="choix">D</div>${pare2.answerD}
+        </label>
+    </div>
+        <!--timer
+        <div id="timer"></div>
+        <script src="timer.js"></script>-->
+        </div>
+    `)
+        .openOn(map);
+
+}
+
+
+function onMapClick5(e) {
+    instructions.style.display = "none";
+    popup
+        .setLatLng(e.latlng)
+        .setContent(`<div class="modal">
+        <h2 class="modalQuestion">${pare2.question}</h2>
+        
+        <div class="answers">
+        <label class="answer answerA" onclick="trueOrFalse()">
+            <div class="choix">A</div>${pare2.answerA}
+        </label>
+        <label class="answer answerB" onclick="trueOrFalse()">
+            <div class="choix">B</div>${pare2.answerB}
+        </label>
+        <label class="answer answerC" onclick="trueOrFalse()">
+            <div class="choix">C</div>${pare2.answerC}
+        </label>
+        <label class="answer answerD" onclick="trueOrFalse()">
+            <div class="choix">D</div>${pare2.answerD}
+        </label>
+    </div>
+        <!--timer
+        <div id="timer"></div>
+        <script src="timer.js"></script>-->
+        </div>
+    `)
+        .openOn(map);
+
+}
+
+
+function onMapClick6(e) {
+    instructions.style.display = "none";
+    popup
+        .setLatLng(e.latlng)
+        .setContent(`<div class="modal">
+        <h2 class="modalQuestion">${pare2.question}</h2>
+        
+        <div class="answers">
+        <label class="answer answerA" onclick="trueOrFalse()">
+            <div class="choix">A</div>${pare2.answerA}
+        </label>
+        <label class="answer answerB" onclick="trueOrFalse()">
+            <div class="choix">B</div>${pare2.answerB}
+        </label>
+        <label class="answer answerC" onclick="trueOrFalse()">
+            <div class="choix">C</div>${pare2.answerC}
+        </label>
+        <label class="answer answerD" onclick="trueOrFalse()">
+            <div class="choix">D</div>${pare2.answerD}
+        </label>
+    </div>
+        <!--timer
+        <div id="timer"></div>
+        <script src="timer.js"></script>-->
+        </div>
+    `)
+        .openOn(map);
+
+}
+
+
+function onMapClick7(e) {
+    instructions.style.display = "none";
+    popup
+        .setLatLng(e.latlng)
+        .setContent(`<div class="modal">
+        <h2 class="modalQuestion">${pare2.question}</h2>
+        
+        <div class="answers">
+        <label class="answer answerA" onclick="trueOrFalse()">
+            <div class="choix">A</div>${pare2.answerA}
+        </label>
+        <label class="answer answerB" onclick="trueOrFalse()">
+            <div class="choix">B</div>${pare2.answerB}
+        </label>
+        <label class="answer answerC" onclick="trueOrFalse()">
+            <div class="choix">C</div>${pare2.answerC}
+        </label>
+        <label class="answer answerD" onclick="trueOrFalse()">
+            <div class="choix">D</div>${pare2.answerD}
+        </label>
+    </div>
+        <!--timer
+        <div id="timer"></div>
+        <script src="timer.js"></script>-->
+        </div>
+    `)
+        .openOn(map);
+
+}
+
+
+function onMapClick8(e) {
+    instructions.style.display = "none";
+    popup
+        .setLatLng(e.latlng)
+        .setContent(`<div class="modal">
+        <h2 class="modalQuestion">${pare2.question}</h2>
+        
+        <div class="answers">
+        <label class="answer answerA" onclick="trueOrFalse()">
+            <div class="choix">A</div>${pare2.answerA}
+        </label>
+        <label class="answer answerB" onclick="trueOrFalse()">
+            <div class="choix">B</div>${pare2.answerB}
+        </label>
+        <label class="answer answerC" onclick="trueOrFalse()">
+            <div class="choix">C</div>${pare2.answerC}
+        </label>
+        <label class="answer answerD" onclick="trueOrFalse()">
+            <div class="choix">D</div>${pare2.answerD}
+        </label>
+    </div>
+        <!--timer
+        <div id="timer"></div>
+        <script src="timer.js"></script>-->
+        </div>
+    `)
+        .openOn(map);
+
+}
+
+
+function onMapClick9(e) {
+    instructions.style.display = "none";
+    popup
+        .setLatLng(e.latlng)
+        .setContent(`<div class="modal">
+        <h2 class="modalQuestion">${pare2.question}</h2>
+        
+        <div class="answers">
+        <label class="answer answerA" onclick="trueOrFalse()">
+            <div class="choix">A</div>${pare2.answerA}
+        </label>
+        <label class="answer answerB" onclick="trueOrFalse()">
+            <div class="choix">B</div>${pare2.answerB}
+        </label>
+        <label class="answer answerC" onclick="trueOrFalse()">
+            <div class="choix">C</div>${pare2.answerC}
+        </label>
+        <label class="answer answerD" onclick="trueOrFalse()">
+            <div class="choix">D</div>${pare2.answerD}
+        </label>
+    </div>
+        <!--timer
+        <div id="timer"></div>
+        <script src="timer.js"></script>-->
+        </div>
+    `)
+        .openOn(map);
+
+}
+
+
+function onMapClick10(e) {
+    instructions.style.display = "none";
+    popup
+        .setLatLng(e.latlng)
+        .setContent(`<div class="modal">
+        <h2 class="modalQuestion">${pare2.question}</h2>
+        
+        <div class="answers">
+        <label class="answer answerA" onclick="trueOrFalse()">
+            <div class="choix">A</div>${pare2.answerA}
+        </label>
+        <label class="answer answerB" onclick="trueOrFalse()">
+            <div class="choix">B</div>${pare2.answerB}
+        </label>
+        <label class="answer answerC" onclick="trueOrFalse()">
+            <div class="choix">C</div>${pare2.answerC}
+        </label>
+        <label class="answer answerD" onclick="trueOrFalse()">
+            <div class="choix">D</div>${pare2.answerD}
+        </label>
+    </div>
+        <!--timer
+        <div id="timer"></div>
+        <script src="timer.js"></script>-->
+        </div>
+    `)
+        .openOn(map);
+
 }
 
 
@@ -183,42 +461,19 @@ function onMapClick(e) {
 
 
 
-//* Function to display the modal with right class that was previos decalred
 
-// function handleClick(marker) {
-   
-//     instructions.style.display = "none";
-//     let modalPopUp = document.createElement("div")
-//         modalPopUp.innerHTML =
-//         `<div class="modal">
-//             <h2 class="modalQuestion">${marker.question}</h2>
-//             <p class="exitButton">Suivant</p>
-//             <div class="answers">
-//             <label class="answer answerA" onclick="trueOrFalse()">
-//                 <div class="choix">A</div>${marker.answerA}
-//             </label>
-//             <label class="answer answerB" onclick="trueOrFalse()">
-//                 <div class="choix">B</div>${marker.answerB}
-//             </label>
-//             <label class="answer answerC" onclick="trueOrFalse()">
-//                 <div class="choix">C</div>${marker.answerC}
-//             </label>
-//             <label class="answer answerD" onclick="trueOrFalse()">
-//                 <div class="choix">D</div>${marker.answerD}
-//             </label>
-//         </div>
-//             <!--timer
-//             <div id="timer"></div>
-//             <script src="timer.js"></script>-->
-//             </div>
-//         `
-//     modal.appendChild(modalPopUp)
-//     // marker.question
+
+function trueOrFalse() {
+    let element = document.querySelectorAll(".answers")
+    console.log(element)
+    element.classList.add("green")
     
-// }
 
+    
 
-// function trueOrFalse(i) {
+}
+
+// function trueOrFalse() {
 //     let element = document.querySelectorAll(".answers")
 //     console.log(element)
 //     if (i === rightAnswer) {
