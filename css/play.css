@@ -8,7 +8,6 @@
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-
 body {
 	height: 100vh;
     background: gainsboro;
@@ -22,9 +21,6 @@ header {
 	align-items: center;
 	height: 65px;
 	background: #430269;
-	
-
-	
 }
 
 header > nav {
@@ -50,12 +46,6 @@ header nav ul li {
 	width: 100%;
 	height: 100%;
 }
-/* .nav-icons {
-	height: 20px;
-	width: 20px;
-    background-color: red;
-} */
-
 #logo-link {
 	align-self: center;
 }
@@ -124,21 +114,8 @@ section {
 	align-items: center;
 	justify-content: center;
 	background-color: #7702BC;
-	/* background-color: #0e02bc; */
 	color: white;
-	/* width: 90vw;
-	height: 85vh; */
 	opacity: 96%;
-	/* margin-top: 2rem; */
-	/* position: absolute; */
-	/* top: 50%; */
-	/* left: 50%; */
-	/* transform: translate(-50%, -50%); */
-	/* z-index: 2; */
-	border-radius: 0.8em;
-	/* flex-direction: column; */
-	/* padding: auto; */
-	
 
 }
 
@@ -162,9 +139,6 @@ section {
 	background-color:#7702BC;
 }
 
-
-
-
 .modalQuestion {
 	padding: auto;
 	margin-top: 2.5rem;
@@ -174,8 +148,6 @@ section {
 	/* background-color: red; */
 	margin: 20px auto;
 }
-
-
 
 .answers {
 	margin-top: 30px;
@@ -216,8 +188,6 @@ section {
 	height: 2.2rem;
 	display: flex;
 	justify-content: center;
-
-
 }
 
 .green {
@@ -240,13 +210,24 @@ section {
 
 }
 
+#timer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* text-align: center; */
+	width: 7rem;
+	height: 2.5rem;
+	background-color:#0fe383;
+	color: #430269;
+	border-radius: 1rem;
+	font-size: 2rem;
+}
+
 @media screen and (min-width: 768px) {
 	.leaflet-popup-content-wrapper {
 		width: 600px;
 		background-color: #7702BC;
 		display: flex;
-	
-
 	}
 
 	.leaflet-container a.leaflet-popup-close-button {
@@ -281,8 +262,6 @@ section {
 		/* background-color: #0fe383; */
 	}
 	
-	
-	
 	.answers {
 		margin-top: 30px;
 		/* background-color: red; */
@@ -291,8 +270,6 @@ section {
 		display: grid;
 		grid-template-columns: auto auto ;
 		grid-template-rows: 100px 100px;
-		
-		
 		
 	}
 	
@@ -312,10 +289,4 @@ section {
 	}
 	
 	
-
-
-
-
-
-
 }
