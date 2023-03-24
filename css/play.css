@@ -122,9 +122,9 @@ section {
 .leaflet-popup-content-wrapper {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: center;
 	background-color: #7702BC;
-	/* background-color: #bc0202; */
+	/* background-color: #0e02bc; */
 	color: white;
 	/* width: 90vw;
 	height: 85vh; */
@@ -136,10 +136,34 @@ section {
 	/* transform: translate(-50%, -50%); */
 	/* z-index: 2; */
 	border-radius: 0.8em;
-	flex-direction: column;
+	/* flex-direction: column; */
 	/* padding: auto; */
+	
 
 }
+
+.modal{
+	/* background-color: yellow; */
+	margin: 0 auto;
+	height: 500px;
+	width: 305px;
+	
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+	color: #0fe383;
+	font-size: 30px ;
+	right: 5px;
+	top: 5px;
+}
+
+.leaflet-popup-tip {
+	
+	background-color:#7702BC;
+}
+
+
+
 
 .modalQuestion {
 	padding: auto;
@@ -147,24 +171,19 @@ section {
 	height: 8rem;
 	width: 90%;
 	text-align: center;
+	/* background-color: red; */
+	margin: 20px auto;
 }
 
-.exitButton {
-	position: absolute;
-	top: 1rem;
-	left: 70%;
-	background-color: #0fe383;
-	color: #7702BC;
-	border-radius: 0.4em;
-	padding: 0.3rem;
-	font-weight: bold;
-}
+
 
 .answers {
-
-	padding: auto;
+	margin-top: 30px;
+	/* background-color: red; */
+	/* margin: auto; */
+	/* padding: auto; */
 	align-items: center;
-	width: 95%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -175,14 +194,15 @@ section {
 	background-color: white;
 	color: #430269;
 	border-radius: 1.5em;
-	height: 3rem;
-	width: 90%;
+	height: 3.5rem;
+	width: 100%;
 	margin: 0.6rem 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-weight: bold;
 	position: relative;
+	text-align: center;
 }
 
 .choix {
@@ -201,10 +221,101 @@ section {
 }
 
 .green {
-	background-color: green;
+	color: green;
 }
 
 .red {
 	background-color: red;
 }
+#answerInsider{
+	display: flex;
+	/* background-color: red; */
+	text-align: center;
+	width: 80%;
+	height: 90%;
+	padding: 0 3px;
+	margin-left: 43px;
+	align-items: center;
+	justify-content: center;
 
+}
+
+@media screen and (min-width: 768px) {
+	.leaflet-popup-content-wrapper {
+		width: 600px;
+		background-color: #7702BC;
+		display: flex;
+	
+
+	}
+
+	.leaflet-container a.leaflet-popup-close-button {
+		color: #0fe383;
+		font-size: 50px ;
+		right: 20px;
+		top: 15px;
+	}
+	
+	.leaflet-popup-tip {
+		
+		background-color:#7702BC;
+	}
+	.modal{
+		/* background-color: yellow; */
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-left: -125px;
+		height: 500px;
+		width: 550px;
+		/* background-color: pink; */
+		
+	}
+	
+	.modalQuestion {
+		/* padding: auto; */
+		/* margin-top: 2.5rem; */
+		height: 8rem;
+		width: 500px;
+		text-align: center;
+		/* background-color: #0fe383; */
+	}
+	
+	
+	
+	.answers {
+		margin-top: 30px;
+		/* background-color: red; */
+		align-items: center;
+		
+		display: grid;
+		grid-template-columns: auto auto ;
+		grid-template-rows: 100px 100px;
+		
+		
+		
+	}
+	
+	.answer {
+		background-color: rgb(255, 255, 255);
+		color: #430269;
+		border-radius: 1.5em;
+		height: 3.5rem;
+		width: 260px;
+		margin: 0.6rem 0;
+		display: flex;
+		/* justify-content: center; */
+		align-items: center;
+		font-weight: bold;
+		position: relative;
+		text-align: center;
+	}
+	
+	
+
+
+
+
+
+
+}
