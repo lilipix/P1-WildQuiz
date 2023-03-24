@@ -40,7 +40,7 @@ export const questionsToQuiz = {
     },
 
     questionPlaceArtise: {
-        question: "L’artiste, auteur de cette statue, aurait oublié un détail important, lequel?",
+        question: "Sur la Place Bellecour, l’artiste, auteur de la statue, aurait oublié un détail important, lequel?",
 
         answers: {
             answerA: "La queue du cheval",

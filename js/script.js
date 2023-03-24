@@ -189,7 +189,7 @@ function onMapClick1(e) {
             <label class="answer answerD">
                 <div class="choix">D</div><div id="answerInsider">${pare1.answerD}</div>
             </label>
-            <div id="timer"></div>
+           <div id="timer"></div>
             
         </div>
 
@@ -210,9 +210,6 @@ function onMapClick1(e) {
     rightWrong[1].addEventListener("click", changeWrongColor1)
     rightWrong[2].addEventListener("click", changeWrongColor2)
     rightWrong[3].addEventListener("click", changeWrongColor3)
-    
-    
-    
     
     function changeRightColor() {
         rightWrong[0].style.backgroundColor = "Green"
@@ -275,26 +272,38 @@ function onMapClick2(e) {
 
     
         const rightWrong = document.querySelectorAll(".answer");
-        rightWrong[0].addEventListener("click", changeRightColor)
+
+    rightWrong[0].addEventListener("click", changeRightColor)
+    rightWrong[1].addEventListener("click", changeWrongColor1)
+    rightWrong[2].addEventListener("click", changeWrongColor2)
+    rightWrong[3].addEventListener("click", changeWrongColor3)
     
-        for(let i = 1; i < 4; i++){
-            console.log(rightWrong[i])
-            rightWrong[i].addEventListener("click", changeWrongColor)
-        }
-        
-        
-        function changeRightColor() {
-            rightWrong[0].style.backgroundColor = "Green"
-            marker2.remove();
-            
-        }
-    
-        function changeWrongColor() {
-            marker2.remove();
-            rightWrong[0].style.backgroundColor = "Green"
-            rightWrong[1].style.backgroundColor = "Red"
-            
-        }
+    function changeRightColor() {
+        rightWrong[0].style.backgroundColor = "Green"
+        marker2.remove();
+        goodAnswer.play();
+    }
+
+    function changeWrongColor1() {
+        marker2.remove();
+        rightWrong[0].style.backgroundColor = "Green";
+        rightWrong[1].style.backgroundColor = "Red";
+        wrongAnswer.play();
+    }
+
+    function changeWrongColor2() {
+        marker2.remove();
+        rightWrong[0].style.backgroundColor = "Green";
+        rightWrong[2].style.backgroundColor = "Red";
+        wrongAnswer.play();
+    }
+
+    function changeWrongColor3() {
+        marker2.remove();
+        rightWrong[0].style.backgroundColor = "Green";
+        rightWrong[3].style.backgroundColor = "Red";
+        wrongAnswer.play();
+    }
         
 }
 
@@ -329,26 +338,38 @@ function onMapClick3(e) {
 
     
         const rightWrong = document.querySelectorAll(".answer");
-        rightWrong[0].addEventListener("click", changeRightColor)
-    
-        for(let i = 1; i < 4; i++){
-            console.log(rightWrong[i])
-            rightWrong[i].addEventListener("click", changeWrongColor)
-        }
-        
-        
-        function changeRightColor() {
-            rightWrong[0].style.backgroundColor = "Green"
-            marker3.remove();
-        }
-    
-        function changeWrongColor() {
-            marker3.remove();
-            rightWrong[0].style.backgroundColor = "Green"
-            rightWrong[1].style.backgroundColor = "Red"
-            
-        }    
 
+    rightWrong[1].addEventListener("click", changeRightColor)
+    rightWrong[0].addEventListener("click", changeWrongColor1)
+    rightWrong[2].addEventListener("click", changeWrongColor2)
+    rightWrong[3].addEventListener("click", changeWrongColor3)
+    
+    function changeRightColor() {
+        rightWrong[1].style.backgroundColor = "Green"
+        marker3.remove();
+        goodAnswer.play();
+    }
+
+    function changeWrongColor1() {
+        marker3.remove();
+        rightWrong[1].style.backgroundColor = "Green";
+        rightWrong[0].style.backgroundColor = "Red";
+        wrongAnswer.play();
+    }
+
+    function changeWrongColor2() {
+        marker3.remove();
+        rightWrong[1].style.backgroundColor = "Green";
+        rightWrong[2].style.backgroundColor = "Red";
+        wrongAnswer.play();
+    }
+
+    function changeWrongColor3() {
+        marker3.remove();
+        rightWrong[1].style.backgroundColor = "Green";
+        rightWrong[3].style.backgroundColor = "Red";
+        wrongAnswer.play();
+    }
 }
 
 
@@ -380,26 +401,39 @@ function onMapClick4(e) {
     `)
         .openOn(map);
 
-        const rightWrong = document.querySelectorAll(".answer");
-        rightWrong[0].addEventListener("click", changeRightColor)
+    const rightWrong = document.querySelectorAll(".answer");
+
+    rightWrong[1].addEventListener("click", changeRightColor)
+    rightWrong[0].addEventListener("click", changeWrongColor1)
+    rightWrong[2].addEventListener("click", changeWrongColor2)
+    rightWrong[3].addEventListener("click", changeWrongColor3)
     
-        for(let i = 1; i < 4; i++){
-            console.log(rightWrong[i])
-            rightWrong[i].addEventListener("click", changeWrongColor)
-        }
-        
-        
-        function changeRightColor() {
-            rightWrong[0].style.backgroundColor = "Green"
-            marker4.remove();
-        }
-    
-        function changeWrongColor() {
-            marker4.remove();
-            rightWrong[0].style.backgroundColor = "Green"
-            rightWrong[1].style.backgroundColor = "Red"
-            
-        }
+    function changeRightColor() {
+        rightWrong[1].style.backgroundColor = "Green"
+        marker4.remove();
+        goodAnswer.play();
+    }
+
+    function changeWrongColor1() {
+        marker4.remove();
+        rightWrong[1].style.backgroundColor = "Green";
+        rightWrong[0].style.backgroundColor = "Red";
+        wrongAnswer.play();
+    }
+
+    function changeWrongColor2() {
+        marker4.remove();
+        rightWrong[1].style.backgroundColor = "Green";
+        rightWrong[2].style.backgroundColor = "Red";
+        wrongAnswer.play();
+    }
+
+    function changeWrongColor3() {
+        marker4.remove();
+        rightWrong[1].style.backgroundColor = "Green";
+        rightWrong[3].style.backgroundColor = "Red";
+        wrongAnswer.play();
+    }
 
 }
 
@@ -434,26 +468,40 @@ function onMapClick5(e) {
 
 
 
-    const rightWrong = document.querySelectorAll(".answer");
-    rightWrong[0].addEventListener("click", changeRightColor)
+        const rightWrong = document.querySelectorAll(".answer");
 
-    for(let i = 1; i < 4; i++){
-        console.log(rightWrong[i])
-        rightWrong[i].addEventListener("click", changeWrongColor)
-    }
-    
-    
-    function changeRightColor() {
-        rightWrong[0].style.backgroundColor = "Green"
-        marker5.remove();
-    }
-
-    function changeWrongColor() {
-        marker5.remove();
-        rightWrong[0].style.backgroundColor = "Green"
-        rightWrong[1].style.backgroundColor = "Red"
+        rightWrong[2].addEventListener("click", changeRightColor)
+        rightWrong[0].addEventListener("click", changeWrongColor1)
+        rightWrong[1].addEventListener("click", changeWrongColor2)
+        rightWrong[3].addEventListener("click", changeWrongColor3)
         
-    }
+        function changeRightColor() {
+            rightWrong[2].style.backgroundColor = "Green"
+            marker5.remove();
+            goodAnswer.play();
+        }
+    
+        function changeWrongColor1() {
+            marker5.remove();
+            rightWrong[2].style.backgroundColor = "Green";
+            rightWrong[0].style.backgroundColor = "Red";
+            wrongAnswer.play();
+        }
+    
+        function changeWrongColor2() {
+            marker5.remove();
+            rightWrong[2].style.backgroundColor = "Green";
+            rightWrong[1].style.backgroundColor = "Red";
+            wrongAnswer.play();
+        }
+    
+        function changeWrongColor3() {
+            marker5.remove();
+            rightWrong[2].style.backgroundColor = "Green";
+            rightWrong[3].style.backgroundColor = "Red";
+            wrongAnswer.play();
+        }
+    
 
 }
 
@@ -488,27 +536,39 @@ function onMapClick6(e) {
 
 
 
-    const rightWrong = document.querySelectorAll(".answer");
-    rightWrong[0].addEventListener("click", changeRightColor)
+        const rightWrong = document.querySelectorAll(".answer");
 
-    for(let i = 1; i < 4; i++){
-        console.log(rightWrong[i])
-        rightWrong[i].addEventListener("click", changeWrongColor)
-    }
-    
-    
-    function changeRightColor() {
-        rightWrong[0].style.backgroundColor = "Green"
-        marker6.remove();
-    }
-
-    function changeWrongColor() {
-        marker6.remove();
-        rightWrong[0].style.backgroundColor = "Green"
-        rightWrong[1].style.backgroundColor = "Red"
+        rightWrong[1].addEventListener("click", changeRightColor)
+        rightWrong[0].addEventListener("click", changeWrongColor1)
+        rightWrong[2].addEventListener("click", changeWrongColor2)
+        rightWrong[3].addEventListener("click", changeWrongColor3)
         
-    }
-
+        function changeRightColor() {
+            rightWrong[1].style.backgroundColor = "Green"
+            marker6.remove();
+            goodAnswer.play();
+        }
+    
+        function changeWrongColor1() {
+            marker6.remove();
+            rightWrong[1].style.backgroundColor = "Green";
+            rightWrong[0].style.backgroundColor = "Red";
+            wrongAnswer.play();
+        }
+    
+        function changeWrongColor2() {
+            marker6.remove();
+            rightWrong[1].style.backgroundColor = "Green";
+            rightWrong[2].style.backgroundColor = "Red";
+            wrongAnswer.play();
+        }
+    
+        function changeWrongColor3() {
+            marker6.remove();
+            rightWrong[1].style.backgroundColor = "Green";
+            rightWrong[3].style.backgroundColor = "Red";
+            wrongAnswer.play();
+        }
 }
 
 
@@ -540,27 +600,40 @@ function onMapClick7(e) {
     `)
         .openOn(map);
 
+        const rightWrong = document.querySelectorAll(".answer");
 
-    const rightWrong = document.querySelectorAll(".answer");
-    rightWrong[0].addEventListener("click", changeRightColor)
-
-    for(let i = 1; i < 4; i++){
-        console.log(rightWrong[i])
-        rightWrong[i].addEventListener("click", changeWrongColor)
-    }
-    
-    
-    function changeRightColor() {
-        rightWrong[0].style.backgroundColor = "Green"
-        marker7.remove();
-    }
-
-    function changeWrongColor() {
-        marker7.remove();
-        rightWrong[0].style.backgroundColor = "Green"
-        rightWrong[1].style.backgroundColor = "Red"
+        rightWrong[0].addEventListener("click", changeRightColor)
+        rightWrong[1].addEventListener("click", changeWrongColor1)
+        rightWrong[2].addEventListener("click", changeWrongColor2)
+        rightWrong[3].addEventListener("click", changeWrongColor3)
         
-    }
+        function changeRightColor() {
+            rightWrong[0].style.backgroundColor = "Green"
+            marker7.remove();
+            goodAnswer.play();
+        }
+    
+        function changeWrongColor1() {
+            marker7.remove();
+            rightWrong[0].style.backgroundColor = "Green";
+            rightWrong[1].style.backgroundColor = "Red";
+            wrongAnswer.play();
+        }
+    
+        function changeWrongColor2() {
+            marker7.remove();
+            rightWrong[0].style.backgroundColor = "Green";
+            rightWrong[2].style.backgroundColor = "Red";
+            wrongAnswer.play();
+        }
+    
+        function changeWrongColor3() {
+            marker7.remove();
+            rightWrong[0].style.backgroundColor = "Green";
+            rightWrong[3].style.backgroundColor = "Red";
+            wrongAnswer.play();
+        }
+    
 
 }
 
@@ -595,27 +668,39 @@ function onMapClick8(e) {
 
 
 
-    const rightWrong = document.querySelectorAll(".answer");
-    rightWrong[0].addEventListener("click", changeRightColor)
+        const rightWrong = document.querySelectorAll(".answer");
 
-    for(let i = 1; i < 4; i++){
-        console.log(rightWrong[i])
-        rightWrong[i].addEventListener("click", changeWrongColor)
-    }
-    
-    
-    function changeRightColor() {
-        rightWrong[0].style.backgroundColor = "Green"
-        marker8.remove();
-    }
-
-    function changeWrongColor() {
-        marker8.remove();
-        rightWrong[0].style.backgroundColor = "Green"
-        rightWrong[1].style.backgroundColor = "Red"
+        rightWrong[1].addEventListener("click", changeRightColor)
+        rightWrong[0].addEventListener("click", changeWrongColor1)
+        rightWrong[2].addEventListener("click", changeWrongColor2)
+        rightWrong[3].addEventListener("click", changeWrongColor3)
         
-    }
-
+        function changeRightColor() {
+            rightWrong[1].style.backgroundColor = "Green"
+            marker8.remove();
+            goodAnswer.play();
+        }
+    
+        function changeWrongColor1() {
+            marker8.remove();
+            rightWrong[1].style.backgroundColor = "Green";
+            rightWrong[0].style.backgroundColor = "Red";
+            wrongAnswer.play();
+        }
+    
+        function changeWrongColor2() {
+            marker8.remove();
+            rightWrong[1].style.backgroundColor = "Green";
+            rightWrong[2].style.backgroundColor = "Red";
+            wrongAnswer.play();
+        }
+    
+        function changeWrongColor3() {
+            marker8.remove();
+            rightWrong[1].style.backgroundColor = "Green";
+            rightWrong[3].style.backgroundColor = "Red";
+            wrongAnswer.play();
+        }
 }
 
 
@@ -649,27 +734,40 @@ function onMapClick9(e) {
 
 
 
-    const rightWrong = document.querySelectorAll(".answer");
-    rightWrong[0].addEventListener("click", changeRightColor)
+        const rightWrong = document.querySelectorAll(".answer");
 
-    for(let i = 1; i < 4; i++){
-        console.log(rightWrong[i])
-        rightWrong[i].addEventListener("click", changeWrongColor)
-    }
-    
-    
-    function changeRightColor() {
-        rightWrong[0].style.backgroundColor = "Green"
-        marker9.remove();
-    }
-
-    function changeWrongColor() {
-        marker9.remove();
-        rightWrong[0].style.backgroundColor = "Green"
-        rightWrong[1].style.backgroundColor = "Red"
+        rightWrong[0].addEventListener("click", changeRightColor)
+        rightWrong[1].addEventListener("click", changeWrongColor1)
+        rightWrong[2].addEventListener("click", changeWrongColor2)
+        rightWrong[3].addEventListener("click", changeWrongColor3)
         
-    }
-
+        function changeRightColor() {
+            rightWrong[0].style.backgroundColor = "Green"
+            marker9.remove();
+            goodAnswer.play();
+        }
+    
+        function changeWrongColor1() {
+            marker9.remove();
+            rightWrong[0].style.backgroundColor = "Green";
+            rightWrong[1].style.backgroundColor = "Red";
+            wrongAnswer.play();
+        }
+    
+        function changeWrongColor2() {
+            marker9.remove();
+            rightWrong[0].style.backgroundColor = "Green";
+            rightWrong[2].style.backgroundColor = "Red";
+            wrongAnswer.play();
+        }
+    
+        function changeWrongColor3() {
+            marker9.remove();
+            rightWrong[0].style.backgroundColor = "Green";
+            rightWrong[3].style.backgroundColor = "Red";
+            wrongAnswer.play();
+        }
+    
 }
 
 
@@ -703,26 +801,38 @@ function onMapClick10(e) {
 
     
         const rightWrong = document.querySelectorAll(".answer");
-        rightWrong[0].addEventListener("click", changeRightColor)
-    
-        for(let i = 1; i < 4; i++){
-            console.log(rightWrong[i])
-            rightWrong[i].addEventListener("click", changeWrongColor)
-        }
-        
+
+        rightWrong[2].addEventListener("click", changeRightColor)
+        rightWrong[0].addEventListener("click", changeWrongColor1)
+        rightWrong[1].addEventListener("click", changeWrongColor2)
+        rightWrong[3].addEventListener("click", changeWrongColor3)
         
         function changeRightColor() {
-            rightWrong[0].style.backgroundColor = "Green"
+            rightWrong[2].style.backgroundColor = "Green"
             marker10.remove();
+            goodAnswer.play();
         }
     
-        function changeWrongColor() {
+        function changeWrongColor1() {
             marker10.remove();
-            rightWrong[0].style.backgroundColor = "Green"
-            rightWrong[1].style.backgroundColor = "Red"
-            
+            rightWrong[2].style.backgroundColor = "Green";
+            rightWrong[0].style.backgroundColor = "Red";
+            wrongAnswer.play();
         }
-
+    
+        function changeWrongColor2() {
+            marker10.remove();
+            rightWrong[2].style.backgroundColor = "Green";
+            rightWrong[1].style.backgroundColor = "Red";
+            wrongAnswer.play();
+        }
+    
+        function changeWrongColor3() {
+            marker10.remove();
+            rightWrong[2].style.backgroundColor = "Green";
+            rightWrong[3].style.backgroundColor = "Red";
+            wrongAnswer.play();
+        }
 }
 
 

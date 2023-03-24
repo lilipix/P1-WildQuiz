@@ -22,10 +22,10 @@
 //     }, 1000)
   
 
-function timer2() {
-  setInterval(() => {
-      console.log("Number")
-  }, 2000); 
-}
+// function timer2() {
+//   setInterval(() => {
+//       console.log("Number")
+//   }, 2000); 
+// }
 
-timer
+// timer
